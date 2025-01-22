@@ -1,0 +1,22 @@
+name: "registration system"
+mode: "dev"
+port: 8081
+version: "v0.0.1"
+start_time: "2025-01-14"
+machine_id: 1
+
+log:
+  level: "debug"
+  filename: "./log/registration-system.log"
+  max_size: 1000
+  max_age: 3600
+  max_backups: 5
+
+mysql:
+  host: "127.0.0.1"
+  port: 3306
+  user: "root"
+  password: "325523"
+  db: "registration-system"
+  max_open_conns: 100
+  max_idle_conns: 20
