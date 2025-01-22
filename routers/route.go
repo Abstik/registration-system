@@ -1,9 +1,11 @@
 package routers
 
 import (
+	"net/http"
+
 	"github.com/gin-contrib/cors"
 	"github.com/gin-gonic/gin"
-	"net/http"
+
 	"registration_system/controller"
 	"registration_system/logger"
 	"registration_system/middleware"

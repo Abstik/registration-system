@@ -2,6 +2,7 @@ package logic
 
 import (
 	"gorm.io/gorm"
+
 	"registration_system/dao/mysql"
 	"registration_system/models"
 	"registration_system/pkg/gomail"

@@ -1,8 +1,9 @@
 package jwt
 
 import (
-	"github.com/dgrijalva/jwt-go"
 	"time"
+
+	"github.com/dgrijalva/jwt-go"
 )
 
 const TokenExpireDuration = time.Hour * 24 * 365 //定义过期时间

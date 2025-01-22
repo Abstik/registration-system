@@ -1,12 +1,14 @@
 package middleware
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
+	"strings"
+
+	"github.com/gin-gonic/gin"
+
 	"registration_system/models"
 	"registration_system/pkg/jwt"
 	"registration_system/response"
-	"strings"
 )
 
 // 基于JWT的认证中间件，对请求头中的token进行校验，并将用户id放在请求的上下文上

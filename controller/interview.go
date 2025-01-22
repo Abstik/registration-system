@@ -2,11 +2,13 @@ package controller
 
 import (
 	"errors"
+	"net/http"
+	"regexp"
+
 	"github.com/gin-gonic/gin"
 	"go.uber.org/zap"
 	"gorm.io/gorm"
-	"net/http"
-	"regexp"
+
 	"registration_system/logic"
 	"registration_system/middleware"
 	"registration_system/models"

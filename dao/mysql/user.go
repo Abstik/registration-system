@@ -2,7 +2,9 @@ package mysql
 
 import (
 	"errors"
+
 	"gorm.io/gorm"
+
 	"registration_system/models"
 )
 

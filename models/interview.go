@@ -4,7 +4,8 @@ type Interview struct {
 	ID            uint   `gorm:"primaryKey;autoIncrement" json:"-"`
 	UserID        uint   `gorm:"not null" json:"-"`
 	InterviewTime string `gorm:"not null" json:"interviewTime"`
-	Status        int8   `gorm:"not null;default:0" json:"status"` // 0表示等待一面，1表示一面未通过，2表示一面试已通过，3表示二面未通过，4表示二面已通过
+	Status        int8   `gorm:"not null;default:0" json:"status"` // 0表示等待一面，1表示一面未通过，2表示一面试已通过
+	Message       string `gorm:"type:varchar(2000);not null;default:''" json:"message"`
 }
 
 /*type CustomTime time.Time

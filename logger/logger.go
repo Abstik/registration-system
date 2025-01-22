@@ -9,12 +9,12 @@ import (
 	"strings"
 	"time"
 
-	"registration_system/settings"
-
 	"github.com/gin-gonic/gin"
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
+
+	"registration_system/settings"
 )
 
 var lg *zap.Logger

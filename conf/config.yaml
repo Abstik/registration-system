@@ -7,7 +7,7 @@ machine_id: 1
 
 log:
   level: "debug"
-  filename: "./log/registration-system.log"
+  filename: "./log/registration_system.log"
   max_size: 1000
   max_age: 3600
   max_backups: 5
@@ -17,6 +17,6 @@ mysql:
   port: 3306
   user: "root"
   password: "325523"
-  db: "registration-system"
+  db: "registration_system"
   max_open_conns: 100
   max_idle_conns: 20

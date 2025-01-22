@@ -2,11 +2,13 @@ package gomail
 
 import (
 	"fmt"
+	"math/rand"
+	"time"
+
 	"github.com/patrickmn/go-cache"
 	"gopkg.in/gomail.v2"
-	"math/rand"
+
 	"registration_system/models"
-	"time"
 )
 
 var (
@@ -35,7 +37,7 @@ func SendVerificationCode(toEmail string) error {
 	// 创建邮件
 	m := gomail.NewMessage()
 	// m.FormatAddress将发件人邮箱和名称格式化为MIME编码的地址
-	m.SetHeader("From", m.FormatAddress(fromEmail, "3G实验室"))
+	m.SetHeader("From", m.FormatAddress(fromEmail, "移动应用开发实验室"))
 	m.SetHeader("To", toEmail)
 	m.SetHeader("Subject", "验证码")
 	m.SetBody("text/html", fmt.Sprintf(`
