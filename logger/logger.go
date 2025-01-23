@@ -55,7 +55,7 @@ func Init(cfg *settings.LogConfig, mode string) (err error) {
 	return
 }
 
-// 生成 JSON 格式的日志
+// 生成JSON格式的日志
 func getEncoder() zapcore.Encoder {
 	encoderConfig := zap.NewProductionEncoderConfig()
 	encoderConfig.EncodeTime = zapcore.ISO8601TimeEncoder
